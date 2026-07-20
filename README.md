@@ -25,6 +25,18 @@ Building this application involved solving several interesting technical challen
 *   **Data Parsing:** Safely handling JavaScript type conversions (ensuring user inputs act as numbers rather than strings) to prevent rendering bugs in the visualization logic.
 *   **Simulated Asynchronous Operations:** Implementing `setTimeout` and cleanup functions via `useRef` and `useEffect` to create a smooth, non-blocking loading state for the dynamic advisor component.
 
+## AI Workflow Integration: GPT-5.6 & Codex
+
+This project was built utilizing OpenAI's models to accelerate development, inform architectural decisions, and rapidly generate complex logic. 
+
+**How GPT-5.6 was used (Architecture & Strategy):**
+*   **Key Decisions:** GPT-5.6 acted as a strategic sounding board. It guided the structural decision to separate the mathematical logic engine from the Chart.js rendering components to maintain clean, scalable code. 
+*   **Problem Solving:** Used to conceptualize the best approach for managing complex dictionary lookups (synchronizing raw data IDs with human-readable inputs) before any code was written.
+
+**How Codex was used (Implementation & Acceleration):**
+*   **Workflow Acceleration:** Codex exponentially sped up the frontend development process. It was utilized to rapidly scaffold Tailwind CSS components and write the boilerplate `useRef` and `useEffect` hooks for the loading states.
+*   **Logic Generation:** Codex was directly responsible for writing the core `reduce` function inside the AI Advisor component, accurately plucking the highest interest rate from a dynamic array and automatically formatting the output into localized USD currency. This saved hours of manual syntax formatting and debugging.
+
 ## Local Installation
 
 To run this project locally on your machine:
